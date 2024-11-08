@@ -1,68 +1,69 @@
 BloodlustMusic = { };
 
 --the hard-coded, default list of songs
+--replaced by Sorean-Braxis
 BloodlustMusic.DefaultSongTable =
 {
-				{Title = "Manuel - GAS GAS GAS", Path = "GasHero.ogg", Enabled = true}, --1
-				{Title = "Max Coveri - Running in the 90's", Path = "90sHero.ogg", Enabled = true}, --2
-				{Title = "Noma - Brainpower", Path = "BrainPowerHero.ogg", Enabled = true}, --3
-				{Title = "Lynyrd Skynyrd - Freebird", Path = "BirdHero.ogg", Enabled = true}, --4
-				{Title = "Darude - Sandstorm", Path = "SandHero.ogg", Enabled = true}, --5
-				{Title = "Niko - Night of Fire", Path = "NightHero.ogg", Enabled = true}, --6
-				{Title = "The Elephant Rave", Path = "ElephantHero.ogg", Enabled = true}, --7
-				{Title = "Fartwad - Stereo Saiyan 3D", Path = "SaiyanHero.ogg", Enabled = true}, --8
-				{Title = "The Jellyfish Jam", Path = "JellyfishHero.ogg", Enabled = true}, --9
-				{Title = "Ken Blast - The Top", Path = "TopHero.ogg", Enabled = true}, --10
-				{Title = "Mega NRG Man - DDD Initial D", Path = "DDDHero.ogg", Enabled = true}, --11
-				{Title = "Lou Master - Up & Dance, Up & Go", Path = "Up&DanceHero.ogg", Enabled = true}, --12
-				{Title = "Fastway - Rockin' Hardcore", Path = "HardcoreHero.ogg", Enabled = true}, --13
-				{Title = "Chris Stanton - A Perfect Hero", Path = "PerfectHero.ogg", Enabled = true}, --14
-				{Title = "Marco Polo - Speedy Speed Boy", Path = "SpeedyHero.ogg", Enabled = true}, --15
+				{Title = "Kontakt - Sweet Dreams", Path = "SweetDreamsHero.mp3", Enabled = true}, --1
+				{Title = "Nick Panek - Agressive", Path = "NickPanek1Hero.mp3", Enabled = true}, --2
+				{Title = "Nick Panek - High Energy", Path = "NickPanekHEHero.mp3", Enabled = true}, --3
+				{Title = "Nick Panek - Relentless", Path = "NickPanekRelentless.mp3", Enabled = true}, --4
+				{Title = "Pedro", Path = "pedrolust.mp3", Enabled = true}, --5
+				{Title = "Lyre Le Temps - Look Like This", Path = "LLTHero.mp3", Enabled = true}, --6
+				{Title = "X-men-97 Theme", Path = "X-men97.mp3", Enabled = true}, --7
+				{Title = "Guile Theme", Path = "GuileTheme.mp3", Enabled = true}, --8
+				{Title = "Top Flow - Breeze Groove", Path = "BreezeGroove.mp3", Enabled = true}, --9
+				{Title = "Top Flow - Power Is You", Path = "PowerIsYou.mp3", Enabled = true}, --10
+				{Title = "Top Flow - Family Trip", Path = "FamilyTrip.mp3", Enabled = true}, --11
+				{Title = "Top Flow - Rise Above", Path = "RiseAbove.mp3", Enabled = true}, --12
+				{Title = "Eugene Myers - Energy Catcher", Path = "EnergyCatcher.mp3", Enabled = true}, --13
+				{Title = "Eugene Myers - Breaking The Point", Path = "BreakingThePoint.mp3", Enabled = true}, --14
+				{Title = "Eugene Myers - Epic Promo", Path = "EpicPromo.mp3", Enabled = true}, --15
 				{Title = "Cascada - Everytime we Touch", Path = "CascadaHero.ogg", Enabled = true}, --16
-				{Title = "Manuel - Sun In The Rain", Path = "SunRainHero.ogg", Enabled = true}, --17
-				{Title = "Lou Grant - Don't Stop The Music", Path = "DontStopHero.ogg", Enabled = true}, --18
-				{Title = "The Prodigy - Invaders must die", Path = "InvadersHero.ogg", Enabled = true}, --19
+				{Title = "RA - NGGYU", Path = "RANGGYU.mp3", Enabled = true}, --17
+				{Title = "Linkin Park - The Emptiness Machine", Path = "LPEmptiness.mp3", Enabled = true}, --18
+				{Title = "Linkin Park - Heavy is the Crown", Path = "LPHeavy.mp3", Enabled = true}, --19
 				{Title = "Eric Prydz - Call On Me", Path = "CallOnMeHero.ogg", Enabled = true}, --20
-				{Title = "Odyssey - Kiss Me Kill Me", Path = "KissKillHero.ogg", Enabled = true}, --21
-				{Title = "Go2 - Looka Bomba", Path = "LookaHero.ogg", Enabled = true}, --22
-				{Title = "ALESTORM - Fucked With An Anchor", Path = "AnchorHero.ogg", Enabled = true}, --23
-				{Title = "Daniel - Full Metal Cars", Path = "FullMetalHero.ogg", Enabled = true}, --24
+				{Title = "Pokémon - Theme Song", Path = "Pokemon.mp3", Enabled = true}, --21
+				{Title = "Star Wars - Cantina Band", Path = "StarWarsCantina.mp3", Enabled = true}, --22
+				{Title = "ALESTORM - Fucked With An Anchor", Path = "AnchorHero.mp3", Enabled = true}, --23
+				{Title = "Daniel - Full Metal Cars", Path = "FullMetalHero.mp3", Enabled = true}, --24
 				{Title = "Mötley Crüe - Kickstart my Heart", Path = "KickstartHero.ogg", Enabled = true}, --25
-				{Title = "Ace - Rider Of The Sky", Path = "RiderHero.ogg", Enabled = true}, --26
-				{Title = "Dave Rodgers - Beat Of The Rising Sun", Path = "RisingSunHero.ogg", Enabled = true}, --27
-				{Title = "Pendulum - Blood Sugar", Path = "BloodSugarHero.ogg", Enabled = true}, --28
-				{Title = "Dave Rodgers - Deja Vu", Path = "DejaVuHero.ogg", Enabled = true}, --29
-				{Title = "Jock Jams - Let's Get Ready To Rumble", Path = "RumbleHero.ogg", Enabled = true}, --30
-				{Title = "Gold-Rake - Hurricane Man", Path = "HurricaneHero.ogg", Enabled = true}, --31
-				{Title = "Go2 - Don't Turn It Off (Chorus)", Path = "DontTurnHero1.ogg", Enabled = true}, --32
-				{Title = "Go2 - Don't Turn It Off (Solo)", Path = "DontTurnHero2.ogg", Enabled = true}, --33
-				{Title = "Eurogroove - Euronight", Path = "EuronightHero.ogg", Enabled = true}, --34
-				{Title = "Fastway - Rock Beatin' Wild", Path = "BeatinWildHero.ogg", Enabled = true}, --35
-				{Title = "Jordan - King Of Eurobeat", Path = "KingHero.ogg", Enabled = true}, --36
-				{Title = "Mark Astley - Super Rider", Path = "SuperRiderHero.ogg", Enabled = true}, --37
-				{Title = "Gordon Jim - Piston Go", Path = "PistonGoHero.ogg", Enabled = true}, --38
-				{Title = "Vicky Vale - Dancing", Path = "DancingHero.ogg", Enabled = true}, --39
-				{Title = "Fastway - Go Beat Crazy", Path = "BeatCrazyHero.ogg", Enabled = true}, --40
-				{Title = "Go2 - Spitfire", Path = "SpitfireHero.ogg", Enabled = true}, --41
-				{Title = "Fastway - Shock Out", Path = "ShockOutHero.ogg", Enabled = true}, --42
-				{Title = "Speedman - Speed Lover", Path = "SpeedLoverHero.ogg", Enabled = true}, --43
-				{Title = "Jennifer Saunders - Holding Out for a Hero", Path = "ShrekHero.ogg", Enabled = true}, --44
-				{Title = "Dizzee Rascal & Armand van Helden - Bonkers", Path = "BonkersHero.ogg", Enabled = true}, --45
-				{Title = "Fastway - Hyper Super Power", Path = "HyperSuperHero.ogg", Enabled = true}, --46
-				{Title = "Go2 & DJ Boss - Superstar", Path = "SuperstarHero.ogg", Enabled = true}, --47
-				{Title = "Ace - Adrenaline", Path = "AdrenalineHero.ogg", Enabled = true}, --48
-				{Title = "Priscilla - Love is in Danger", Path = "LoveDangerHero.ogg", Enabled = true}, --49
-				{Title = "Sara - Burning Up For You", Path = "BurningUpHero.ogg", Enabled = true}, --50
-				{Title = "Daniel - Frontal Impact", Path = "ImpactHero.ogg", Enabled = true}, --51
-				{Title = "Fastway - Love Countdown", Path = "CountdownHero.ogg", Enabled = true}, --52
-				{Title = "Symbol - Forever Young", Path = "YoungHero.ogg", Enabled = true}, --53
-				{Title = "The Snake - Speed of Light", Path = "SpeedLightHero.ogg", Enabled = true}, --54
-				{Title = "Daniel - Super Driver", Path = "SuperDriverHero.ogg", Enabled = true}, --55
-				{Title = "Carpenter Brut - Roller Mobster", Path = "RollerMobsterHero.ogg", Enabled = true}, --56
-				{Title = "DJ Paul Elstak - Rainbow High In The Sky", Path = "RainbowHighHero.ogg", Enabled = true}, --57
-				{Title = "Nakatomi - Children of the Night", Path = "NightChildrenHero.ogg", Enabled = true}, --58
-				{Title = "Ace - Crazy On Emotion", Path = "CrazyEmotionHero.ogg", Enabled = true}, --59
-				{Title = "2 Fast - Burning Up The Night", Path = "BurningNightHero.ogg", Enabled = true}, --60
+				{Title = "Ace - Rider Of The Sky", Path = "RiderHero.mp3", Enabled = true}, --26
+				{Title = "Dave Rodgers - Beat Of The Rising Sun", Path = "RisingSunHero.mp3", Enabled = true}, --27
+				{Title = "Pendulum - Blood Sugar", Path = "BloodSugarHero.mp3", Enabled = true}, --28
+				{Title = "Dave Rodgers - Deja Vu", Path = "DejaVuHero.mp3", Enabled = true}, --29
+				{Title = "Jock Jams - Let's Get Ready To Rumble", Path = "RumbleHero.mp3", Enabled = true}, --30
+				{Title = "Gold-Rake - Hurricane Man", Path = "HurricaneHero.mp3", Enabled = true}, --31
+				{Title = "Go2 - Don't Turn It Off (Chorus)", Path = "DontTurnHero1.mp3", Enabled = true}, --32
+				{Title = "Go2 - Don't Turn It Off (Solo)", Path = "DontTurnHero2.mp3", Enabled = true}, --33
+				{Title = "Eurogroove - Euronight", Path = "EuronightHero.mp3", Enabled = true}, --34
+				{Title = "Fastway - Rock Beatin' Wild", Path = "BeatinWildHero.mp3", Enabled = true}, --35
+				{Title = "Jordan - King Of Eurobeat", Path = "KingHero.mp3", Enabled = true}, --36
+				{Title = "Mark Astley - Super Rider", Path = "SuperRiderHero.mp3", Enabled = true}, --37
+				{Title = "Gordon Jim - Piston Go", Path = "PistonGoHero.mp3", Enabled = true}, --38
+				{Title = "Vicky Vale - Dancing", Path = "DancingHero.mp3", Enabled = true}, --39
+				{Title = "Fastway - Go Beat Crazy", Path = "BeatCrazyHero.mp3", Enabled = true}, --40
+				{Title = "Go2 - Spitfire", Path = "SpitfireHero.mp3", Enabled = true}, --41
+				{Title = "Fastway - Shock Out", Path = "ShockOutHero.mp3", Enabled = true}, --42
+				{Title = "Speedman - Speed Lover", Path = "SpeedLoverHero.mp3", Enabled = true}, --43
+				{Title = "Jennifer Saunders - Holding Out for a Hero", Path = "ShrekHero.mp3", Enabled = true}, --44
+				{Title = "Dizzee Rascal & Armand van Helden - Bonkers", Path = "BonkersHero.mp3", Enabled = true}, --45
+				{Title = "Fastway - Hyper Super Power", Path = "HyperSuperHero.mp3", Enabled = true}, --46
+				{Title = "Go2 & DJ Boss - Superstar", Path = "SuperstarHero.mp3", Enabled = true}, --47
+				{Title = "Ace - Adrenaline", Path = "AdrenalineHero.mp3", Enabled = true}, --48
+				{Title = "Priscilla - Love is in Danger", Path = "LoveDangerHero.mp3", Enabled = true}, --49
+				{Title = "Sara - Burning Up For You", Path = "BurningUpHero.mp3", Enabled = true}, --50
+				{Title = "Daniel - Frontal Impact", Path = "ImpactHero.mp3", Enabled = true}, --51
+				{Title = "Fastway - Love Countdown", Path = "CountdownHero.mp3", Enabled = true}, --52
+				{Title = "Symbol - Forever Young", Path = "YoungHero.mp3", Enabled = true}, --53
+				{Title = "The Snake - Speed of Light", Path = "SpeedLightHero.mp3", Enabled = true}, --54
+				{Title = "Daniel - Super Driver", Path = "SuperDriverHero.mp3", Enabled = true}, --55
+				{Title = "Carpenter Brut - Roller Mobster", Path = "RollerMobsterHero.mp3", Enabled = true}, --56
+				{Title = "DJ Paul Elstak - Rainbow High In The Sky", Path = "RainbowHighHero.mp3", Enabled = true}, --57
+				{Title = "Nakatomi - Children of the Night", Path = "NightChildrenHero.mp3", Enabled = true}, --58
+				{Title = "Ace - Crazy On Emotion", Path = "CrazyEmotionHero.mp3", Enabled = true}, --59
+				{Title = "2 Fast - Burning Up The Night", Path = "BurningNightHero.mp3", Enabled = true}, --60
 }
 
 --the default, empty friendlist
@@ -211,7 +212,7 @@ function SongPlayerRepeatable(songIndex, friendIndex)
 		currentFilePath = currentFilePath .. path
     else
         currentlyPlaying = currentlyPlaying .. "No Song"
-		currentFilePath = currentFilePath .. "NoSong.ogg"
+		currentFilePath = currentFilePath .. "NoSong.mp3"
 	end
 
 	--(Hopefully) plays a song
