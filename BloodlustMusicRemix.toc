@@ -1,11 +1,10 @@
-## Interface: 110000
-## Title: Bloodlust Music
+## Interface: 110005
+## Title: Bloodlust Music Remix
 ## Notes: A bloated, over-engineered Addon that plays music during Bloodlust
-## Author: Yellowdevil-ArgentDawn
-## Version: 1.3.2
+## Original Author: Yellowdevil-ArgentDawn
+## Modified by: Sorean-Dawnbringer
+## Version: 1.0.0
 ## SavedVariables: BloodlustSoundchannelNumber, BloodlustVolumecache, BloodlustSoundhandle, BloodlustChannelVolume, BloodlustMaxSoundchannelBoolean, BloodlustSoundchannelscache, BloodlustMusicMute, BloodlustSongObjectTable, BloodlustMusicShowPanelAfterReload, BloodlustFavoredFriendTable
 
-BloodlustMusicConfig.lua
-BloodlustMusic.lua
-
-## No updates from Sorean-Braxis
+BloodlustMusicRemixConfig.lua
+BloodlustMusicRemix.lua

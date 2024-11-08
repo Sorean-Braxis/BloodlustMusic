@@ -29,3 +29,6 @@ Linkin Park - Heavy is the Crown
 Rise Against - Savior
 X-Men 97 theme
 Pokemon Theme
+
+
+Special thanks to Ness, Bagel, Shashu, Artimest, Grimlock, AvatarTouka Fuzz, and my son for song suggestions.

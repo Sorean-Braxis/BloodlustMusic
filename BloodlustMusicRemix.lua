@@ -1,16 +1,16 @@
 BloodlustMusic = { };
 
 --the hard-coded, default list of songs
---replaced by Sorean-Braxis
+--Updated Songs by Sorean-Dawnbringer
 BloodlustMusic.DefaultSongTable =
 {
 				{Title = "Kontakt - Sweet Dreams", Path = "SweetDreamsHero.mp3", Enabled = true}, --1
-				{Title = "Nick Panek - Agressive", Path = "NickPanek1Hero.mp3", Enabled = true}, --2
+				{Title = "Nick Panek - Agressive", Path = "NickPanekAgressiveHero.mp3", Enabled = true}, --2
 				{Title = "Nick Panek - High Energy", Path = "NickPanekHEHero.mp3", Enabled = true}, --3
 				{Title = "Nick Panek - Relentless", Path = "NickPanekRelentless.mp3", Enabled = true}, --4
 				{Title = "Pedro", Path = "pedrolust.mp3", Enabled = true}, --5
 				{Title = "Lyre Le Temps - Look Like This", Path = "LLTHero.mp3", Enabled = true}, --6
-				{Title = "X-men-97 Theme", Path = "X-men97.mp3", Enabled = true}, --7
+				{Title = "X-men - 97 Theme", Path = "Xmen97.mp3", Enabled = true}, --7
 				{Title = "Guile Theme", Path = "GuileTheme.mp3", Enabled = true}, --8
 				{Title = "Top Flow - Breeze Groove", Path = "BreezeGroove.mp3", Enabled = true}, --9
 				{Title = "Top Flow - Power Is You", Path = "PowerIsYou.mp3", Enabled = true}, --10
@@ -26,16 +26,16 @@ BloodlustMusic.DefaultSongTable =
 				{Title = "Eric Prydz - Call On Me", Path = "CallOnMeHero.ogg", Enabled = true}, --20
 				{Title = "Pokémon - Theme Song", Path = "Pokemon.mp3", Enabled = true}, --21
 				{Title = "Star Wars - Cantina Band", Path = "StarWarsCantina.mp3", Enabled = true}, --22
-				{Title = "ALESTORM - Fucked With An Anchor", Path = "AnchorHero.mp3", Enabled = true}, --23
-				{Title = "Daniel - Full Metal Cars", Path = "FullMetalHero.mp3", Enabled = true}, --24
+				{Title = "Avenge Sevenfold - Almost Easy", Path = "ASAlmostEasy.mp3", Enabled = true}, --23
+				{Title = "A Day To Remember - Mr. Highway's Thinking About The End", Path = "ADTRMrHighway.mp3", Enabled = true}, --24
 				{Title = "Mötley Crüe - Kickstart my Heart", Path = "KickstartHero.ogg", Enabled = true}, --25
-				{Title = "Ace - Rider Of The Sky", Path = "RiderHero.mp3", Enabled = true}, --26
-				{Title = "Dave Rodgers - Beat Of The Rising Sun", Path = "RisingSunHero.mp3", Enabled = true}, --27
-				{Title = "Pendulum - Blood Sugar", Path = "BloodSugarHero.mp3", Enabled = true}, --28
-				{Title = "Dave Rodgers - Deja Vu", Path = "DejaVuHero.mp3", Enabled = true}, --29
-				{Title = "Jock Jams - Let's Get Ready To Rumble", Path = "RumbleHero.mp3", Enabled = true}, --30
-				{Title = "Gold-Rake - Hurricane Man", Path = "HurricaneHero.mp3", Enabled = true}, --31
-				{Title = "Go2 - Don't Turn It Off (Chorus)", Path = "DontTurnHero1.mp3", Enabled = true}, --32
+				{Title = "Martin Garrix - Animals", Path = "MGAnimals.mp3", Enabled = true}, --26
+				{Title = "Dimrain47 - Midnight Siege", Path = "DimRain47MidnightSiege.mp3", Enabled = true}, --27
+				{Title = "F777 - Hydra", Path = "F777Hydra.mp3", Enabled = true}, --28
+				{Title = "Michael Jackson - Thriller", Path = "MJThriller.mp3", Enabled = true}, --29
+				{Title = "MF Ghost - Break Out Fire", Path = "MFGBreakOutFire.mp3", Enabled = true}, --30
+				{Title = "Tom Cardy - Perception Check", Path = "TCPerception.mp3", Enabled = true}, --31
+				{Title = "Holding Out for a Healer - World of Warcraft Parody", Path = "HOFH.mp3", Enabled = true}, --32
 				{Title = "Go2 - Don't Turn It Off (Solo)", Path = "DontTurnHero2.mp3", Enabled = true}, --33
 				{Title = "Eurogroove - Euronight", Path = "EuronightHero.mp3", Enabled = true}, --34
 				{Title = "Fastway - Rock Beatin' Wild", Path = "BeatinWildHero.mp3", Enabled = true}, --35
@@ -124,8 +124,8 @@ local playerGUID;
 local tried = 0
 local randomNumber = 0
 local willPlay = 0
-local defaultFilePath = "interface/addons/bloodlustmusic/sounds/"
-local customFilePath = "interface/addons/bloodlustmusic/customsongs/"
+local defaultFilePath = "interface/addons/bloodlustmusicremix/sounds/"
+local customFilePath = "interface/addons/bloodlustmusicremix/customsongs/"
 local currentFilePath = " "
 local currentlyPlaying = " "
 local minute = 0
@@ -231,8 +231,8 @@ function SongPlayerPrimer(heroSpellID, specificSong, favoredFriend)
 		--Resetting some variables
 		tried = 0
 		randomNumber = 0
-		defaultFilePath = "interface/addons/bloodlustmusic/sounds/"
-		customFilePath = "interface/addons/bloodlustmusic/customsongs/"
+		defaultFilePath = "interface/addons/bloodlustmusicremix/sounds/"
+		customFilePath = "interface/addons/bloodlustmusicremix/customsongs/"
 		currentFilePath = " "
 		currentlyPlaying = " "
 		local friendMessage = " "
