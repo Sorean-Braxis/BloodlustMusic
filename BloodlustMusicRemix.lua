@@ -1,8 +1,8 @@
-BloodlustMusic = { };
+BloodlustMusicRemix = { };
 
 --the hard-coded, default list of songs
 --Updated Songs by Sorean-Dawnbringer
-BloodlustMusic.DefaultSongTable =
+BloodlustMusicRemix.DefaultSongTable =
 {
 				{Title = "Kontakt - Sweet Dreams", Path = "SweetDreamsHero.mp3", Enabled = true}, --1
 				{Title = "Nick Panek - Agressive", Path = "NickPanekAgressiveHero.mp3", Enabled = true}, --2
@@ -36,12 +36,12 @@ BloodlustMusic.DefaultSongTable =
 				{Title = "MF Ghost - Break Out Fire", Path = "MFGBreakOutFire.mp3", Enabled = true}, --30
 				{Title = "Tom Cardy - Perception Check", Path = "TCPerception.mp3", Enabled = true}, --31
 				{Title = "Holding Out for a Healer - World of Warcraft Parody", Path = "HOFH.mp3", Enabled = true}, --32
-				{Title = "Go2 - Don't Turn It Off (Solo)", Path = "DontTurnHero2.mp3", Enabled = true}, --33
-				{Title = "Eurogroove - Euronight", Path = "EuronightHero.mp3", Enabled = true}, --34
-				{Title = "Fastway - Rock Beatin' Wild", Path = "BeatinWildHero.mp3", Enabled = true}, --35
-				{Title = "Jordan - King Of Eurobeat", Path = "KingHero.mp3", Enabled = true}, --36
-				{Title = "Mark Astley - Super Rider", Path = "SuperRiderHero.mp3", Enabled = true}, --37
-				{Title = "Gordon Jim - Piston Go", Path = "PistonGoHero.mp3", Enabled = true}, --38
+				{Title = "Zedd - Spectrum", Path = "ZeddSpectrum.mp3", Enabled = true}, --33
+				{Title = "Sonic The Hedgehog - Green Hills Zone", Path = "Sonic.mp3", Enabled = true}, --34
+				{Title = "Haddaway - What is love?", Path = "Haddaway.mp3", Enabled = true}, --35
+				{Title = "Mortal Kombat - Main Theme", Path = "MKTheme.mp3", Enabled = true}, --36
+				{Title = "Foo Fighers - Everlong", Path = "FFEverlong.mp3", Enabled = true}, --37
+				{Title = "Repo! - At the Opera", Path = "PistonGoHero.mp3", Enabled = true}, --38
 				{Title = "Vicky Vale - Dancing", Path = "DancingHero.mp3", Enabled = true}, --39
 				{Title = "Fastway - Go Beat Crazy", Path = "BeatCrazyHero.mp3", Enabled = true}, --40
 				{Title = "Go2 - Spitfire", Path = "SpitfireHero.mp3", Enabled = true}, --41
@@ -67,7 +67,7 @@ BloodlustMusic.DefaultSongTable =
 }
 
 --the default, empty friendlist
-BloodlustMusic.DefaultFavoredFriendTable =
+BloodlustMusicRemix.DefaultFavoredFriendTable =
 {
 	{Name = "", Title = "", Path = "", Enabled = false}, --1
 	{Name = "", Title = "", Path = "", Enabled = false}, --2
@@ -76,7 +76,7 @@ BloodlustMusic.DefaultFavoredFriendTable =
 	{Name = "", Title = "", Path = "", Enabled = false}, --5
 }
 
-BloodlustMusic.soundChannelTable = {
+BloodlustMusicRemix.soundChannelTable = {
     "master",
     "sfx",
     "music",
@@ -84,7 +84,7 @@ BloodlustMusic.soundChannelTable = {
     "dialog"
 }
 
-BloodlustMusic.soundVolumeTable = {
+BloodlustMusicRemix.soundVolumeTable = {
     "Sound_MasterVolume",
     "Sound_SFXVolume",
     "Sound_MusicVolume",
@@ -92,7 +92,7 @@ BloodlustMusic.soundVolumeTable = {
     "Sound_DialogVolume"
 }
 
-BloodlustMusic.soundChannelNames = {
+BloodlustMusicRemix.soundChannelNames = {
     "Master",
     "SFX",
     "Music",
@@ -100,7 +100,7 @@ BloodlustMusic.soundChannelNames = {
     "Dialog"
 }
 
-BloodlustMusic.soundEnabledTable = {
+BloodlustMusicRemix.soundEnabledTable = {
     "Sound_EnableAllSound",
     "Sound_EnableSFX",
     "Sound_EnableMusic",
@@ -108,14 +108,14 @@ BloodlustMusic.soundEnabledTable = {
     "Sound_EnableDialog"
 }
 
-BloodlustMusic.isSongPlaying = false
-BloodlustMusic.currentSongSpellID = 0
-BloodlustMusic.announcerHeader = "|cFFff2f00BloodlustMusic:|r "
+BloodlustMusicRemix.isSongPlaying = false
+BloodlustMusicRemix.currentSongSpellID = 0
+BloodlustMusicRemix.announcerHeader = "|cFFff2f00BloodlustMusicRemix:|r "
 
 --Create a slash command
-SLASH_BLOODLUSTMUSIC1, SLASH_BLOODLUSTMUSIC2 = '/blm', '/bloodlust';
-function SlashCmdList.BLOODLUSTMUSIC(msg, editbox)
-	Settings.OpenToCategory(BloodlustMusic.category:GetID());
+SLASH_BloodlustMusicRemix1, SLASH_BloodlustMusicRemix2 = '/blm', '/bloodlust';
+function SlashCmdList.BloodlustMusicRemix(msg, editbox)
+	Settings.OpenToCategory(BloodlustMusicRemix.category:GetID());
 end
 
 --Declaring Variables
@@ -124,8 +124,8 @@ local playerGUID;
 local tried = 0
 local randomNumber = 0
 local willPlay = 0
-local defaultFilePath = "interface/addons/bloodlustmusicremix/sounds/"
-local customFilePath = "interface/addons/bloodlustmusicremix/customsongs/"
+local defaultFilePath = "interface/addons/BloodlustMusicRemix/sounds/"
+local customFilePath = "interface/addons/BloodlustMusicRemix/customsongs/"
 local currentFilePath = " "
 local currentlyPlaying = " "
 local minute = 0
@@ -170,13 +170,13 @@ end
 --Stops the song when Hero ends or is cancelled, resets variables and CVars to previous levels
 function StopSong(Showtext)
 	--Stops the song when Hero ends or is cancelled
-	BloodlustMusic.isSongPlaying = false
-	BloodlustMusic.currentSongSpellID = 0
+	BloodlustMusicRemix.isSongPlaying = false
+	BloodlustMusicRemix.currentSongSpellID = 0
 	StopSound(BloodlustSoundhandle)
-	SetCVar(BloodlustMusic.soundVolumeTable[BloodlustSoundchannelNumber], BloodlustVolumecache)
+	SetCVar(BloodlustMusicRemix.soundVolumeTable[BloodlustSoundchannelNumber], BloodlustVolumecache)
   	SetCVar("Sound_NumChannels", BloodlustSoundchannelscache)
 	if (Showtext) then
-		print(BloodlustMusic.announcerHeader .. "Song Stopped")
+		print(BloodlustMusicRemix.announcerHeader .. "Song Stopped")
 	end
 end
 
@@ -197,14 +197,14 @@ function SongPlayerRepeatable(songIndex, friendIndex)
 	end
 	--Checks if the desired song is in the default list, and sets the filepath accordingly
 	currentFilePath = customFilePath
-	for a, c in pairs(BloodlustMusic.DefaultSongTable) do
+	for a, c in pairs(BloodlustMusicRemix.DefaultSongTable) do
 		if c["Path"] == path then
 			currentFilePath = defaultFilePath;
 		end
 	end
 
 	--Preps and sets the announcement that a song is playing
-	currentlyPlaying = BloodlustMusic.announcerHeader ..  "Now Playing: "
+	currentlyPlaying = BloodlustMusicRemix.announcerHeader ..  "Now Playing: "
 
     if(enabled)
     then
@@ -216,27 +216,27 @@ function SongPlayerRepeatable(songIndex, friendIndex)
 	end
 
 	--(Hopefully) plays a song
-	willPlay, BloodlustSoundhandle = PlaySoundFile(currentFilePath, BloodlustMusic.soundChannelTable[BloodlustSoundchannelNumber])
+	willPlay, BloodlustSoundhandle = PlaySoundFile(currentFilePath, BloodlustMusicRemix.soundChannelTable[BloodlustSoundchannelNumber])
 end
 
 --First time setup and subsequent logic to play a song
 function SongPlayerPrimer(heroSpellID, specificSong, favoredFriend)
 	--Checks if a song is playing, or if the addon is muted
-    if (BloodlustMusic.isSongPlaying) then
-        print(BloodlustMusic.announcerHeader .. "A song is already playing.")
-    elseif(BloodlustMusicMute) then
-        print(BloodlustMusic.announcerHeader .. "No song was selected. BloodlustMusic is currently muted.")
+    if (BloodlustMusicRemix.isSongPlaying) then
+        print(BloodlustMusicRemix.announcerHeader .. "A song is already playing.")
+    elseif(BloodlustMusicRemixMute) then
+        print(BloodlustMusicRemix.announcerHeader .. "No song was selected. BloodlustMusicRemix is currently muted.")
     else
 
 		--Resetting some variables
 		tried = 0
 		randomNumber = 0
-		defaultFilePath = "interface/addons/bloodlustmusicremix/sounds/"
-		customFilePath = "interface/addons/bloodlustmusicremix/customsongs/"
+		defaultFilePath = "interface/addons/BloodlustMusicRemix/sounds/"
+		customFilePath = "interface/addons/BloodlustMusicRemix/customsongs/"
 		currentFilePath = " "
 		currentlyPlaying = " "
 		local friendMessage = " "
-		BloodlustVolumecache = tonumber(GetCVar(BloodlustMusic.soundVolumeTable[BloodlustSoundchannelNumber]))
+		BloodlustVolumecache = tonumber(GetCVar(BloodlustMusicRemix.soundVolumeTable[BloodlustSoundchannelNumber]))
 
 		--gets the current local time (minute)
 		minute = (date("%M"))
@@ -252,9 +252,9 @@ function SongPlayerPrimer(heroSpellID, specificSong, favoredFriend)
 		end
 
 		--primes sound values for playing
-		BloodlustVolumecache = tonumber(GetCVar(BloodlustMusic.soundVolumeTable[BloodlustSoundchannelNumber]))
+		BloodlustVolumecache = tonumber(GetCVar(BloodlustMusicRemix.soundVolumeTable[BloodlustSoundchannelNumber]))
 		BloodlustSoundchannelscache = GetCVar("Sound_NumChannels")
-		SetCVar(BloodlustMusic.soundVolumeTable[BloodlustSoundchannelNumber], BloodlustVolumecache < BloodlustChannelVolume and BloodlustChannelVolume or BloodlustVolumecache)
+		SetCVar(BloodlustMusicRemix.soundVolumeTable[BloodlustSoundchannelNumber], BloodlustVolumecache < BloodlustChannelVolume and BloodlustChannelVolume or BloodlustVolumecache)
 		if (BloodlustMaxSoundchannelBoolean) then
  	 		SetCVar("Sound_NumChannels", 128)
 		end
@@ -281,24 +281,24 @@ function SongPlayerPrimer(heroSpellID, specificSong, favoredFriend)
 		if(tried >= 20) then
 			BloodlustSoundhandle = 0
 			StopSong(false)
-  	      if(tonumber(GetCVar(BloodlustMusic.soundEnabledTable[BloodlustSoundchannelNumber]))== 0) then
-  	          print(BloodlustMusic.announcerHeader .. "No song was selected. Your " .. BloodlustMusic.soundChannelNames[BloodlustSoundchannelNumber] .. " volume channel is muted.")
+  	      if(tonumber(GetCVar(BloodlustMusicRemix.soundEnabledTable[BloodlustSoundchannelNumber]))== 0) then
+  	          print(BloodlustMusicRemix.announcerHeader .. "No song was selected. Your " .. BloodlustMusicRemix.soundChannelNames[BloodlustSoundchannelNumber] .. " volume channel is muted.")
   	      elseif (tonumber(GetCVar("Sound_EnableAllSound"))== 0) then
-  	          print(BloodlustMusic.announcerHeader .. "No song was selected. Your WoW sound is muted.")
+  	          print(BloodlustMusicRemix.announcerHeader .. "No song was selected. Your WoW sound is muted.")
   	      else
-			    print(BloodlustMusic.announcerHeader .. "No song was selected. The Addon can't find any songs, you've disabled too many or your computer's sound is muted. I think? idk man.")
+			    print(BloodlustMusicRemix.announcerHeader .. "No song was selected. The Addon can't find any songs, you've disabled too many or your computer's sound is muted. I think? idk man.")
   	      end
 		else
-			BloodlustMusic.isSongPlaying = true
-			BloodlustMusic.currentSongSpellID = heroSpellID
+			BloodlustMusicRemix.isSongPlaying = true
+			BloodlustMusicRemix.currentSongSpellID = heroSpellID
 			if favoredFriend > 0 and BloodlustFavoredFriendTable[favoredFriend]["Enabled"] and BloodlustFavoredFriendTable[favoredFriend]["Title"] ~= "" and BloodlustFavoredFriendTable[favoredFriend]["Path"] ~= "" then
-				friendMessage = BloodlustMusic.announcerHeader .. "Hero was cast by your Favored Friend: " ..  BloodlustFavoredFriendTable[favoredFriend]["Name"]
+				friendMessage = BloodlustMusicRemix.announcerHeader .. "Hero was cast by your Favored Friend: " ..  BloodlustFavoredFriendTable[favoredFriend]["Name"]
 				--show a message Hero was cast by a favoredFriend
 				print(friendMessage)
 			end
 			--if statement here shouldnt fire, will fix later
 			if favoredFriend > 0  and not(BloodlustFavoredFriendTable[favoredFriend]["Enabled"]) and BloodlustFavoredFriendTable[favoredFriend]["Title"] ~= "" and BloodlustFavoredFriendTable[favoredFriend]["Path"] ~= "" then
-				friendMessage = BloodlustMusic.announcerHeader .. "Hero was cast by your Favored Friend: " ..  BloodlustFavoredFriendTable[favoredFriend]["Name"].. ". But the song wasn't enabled. Playing another song instead."
+				friendMessage = BloodlustMusicRemix.announcerHeader .. "Hero was cast by your Favored Friend: " ..  BloodlustFavoredFriendTable[favoredFriend]["Name"].. ". But the song wasn't enabled. Playing another song instead."
 				print(friendMessage)
 			end
 			--show a message that a song is playing
@@ -339,7 +339,7 @@ function f:OnEvent()
 			end
 			--if the buff removed was a hero buff then
 			for key,value in pairs(spellIDS) do
-				if (value == spellID and value == BloodlustMusic.currentSongSpellID) then
+				if (value == spellID and value == BloodlustMusicRemix.currentSongSpellID) then
 					--stop the song
 					StopSong(true);
 				end		
@@ -352,11 +352,11 @@ f:SetScript("OnEvent", f.OnEvent);
 --Main/Options Panel
 local panelWidth = 670 --SettingsPanel:GetWidth()
 local panelHeight = SettingsPanel:GetHeight()
-BloodlustMusic.panel = CreateFrame( "Frame", "BloodlustMusicPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate" );
-BloodlustMusic.panel.name = "BloodlustMusic";
-BloodlustMusic.panel:SetSize(panelWidth, panelHeight);
-BloodlustMusic.category, BloodlustMusic.layout = Settings.RegisterCanvasLayoutCategory(BloodlustMusic.panel, "Bloodlust Music")
-Settings.RegisterAddOnCategory(BloodlustMusic.category);
+BloodlustMusicRemix.panel = CreateFrame( "Frame", "BloodlustMusicRemixPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate" );
+BloodlustMusicRemix.panel.name = "BloodlustMusicRemix";
+BloodlustMusicRemix.panel:SetSize(panelWidth, panelHeight);
+BloodlustMusicRemix.category, BloodlustMusicRemix.layout = Settings.RegisterCanvasLayoutCategory(BloodlustMusicRemix.panel, "Bloodlust Music Remix")
+Settings.RegisterAddOnCategory(BloodlustMusicRemix.category);
 
 
 --What to do on Login, Reload or Zoning
@@ -368,10 +368,10 @@ Loading_EventFrame:SetScript("OnEvent",
 		f:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 		C_Timer.After(2, function()
 			f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
-			if BloodlustMusicShowPanelAfterReload == true then
-				Settings.OpenToCategory(BloodlustMusic.category:GetID());
+			if BloodlustMusicRemixShowPanelAfterReload == true then
+				Settings.OpenToCategory(BloodlustMusicRemix.category:GetID());
 			end
-			BloodlustMusicShowPanelAfterReload = false
+			BloodlustMusicRemixShowPanelAfterReload = false
 		end)
 	end)
 
