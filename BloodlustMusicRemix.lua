@@ -5,20 +5,20 @@ BloodlustMusicRemix = { };
 BloodlustMusicRemix.DefaultSongTable =
 {
 				{Title = "Kontakt - Sweet Dreams", Path = "SweetDreamsHero.mp3", Enabled = true}, --1
-				{Title = "Nick Panek - Agressive", Path = "NickPanekAgressiveHero.mp3", Enabled = true}, --2
-				{Title = "Nick Panek - High Energy", Path = "NickPanekHEHero.mp3", Enabled = true}, --3
-				{Title = "Nick Panek - Relentless", Path = "NickPanekRelentless.mp3", Enabled = true}, --4
+				{Title = "Gob - I hear you calling", Path = "GobCalling.mp3", Enabled = true}, --2
+				{Title = "Papa Roach - Blood Brothers", Path = "PRBloodBrothers.mp3", Enabled = true}, --3
+				{Title = "Powerman 5000 - When Worlds Collide", Path = "P5000WWC.mp3", Enabled = true}, --4
 				{Title = "Pedro", Path = "pedrolust.mp3", Enabled = true}, --5
 				{Title = "Lyre Le Temps - Look Like This", Path = "LLTHero.mp3", Enabled = true}, --6
 				{Title = "X-men - 97 Theme", Path = "Xmen97.mp3", Enabled = true}, --7
 				{Title = "Guile Theme", Path = "GuileTheme.mp3", Enabled = true}, --8
-				{Title = "Top Flow - Breeze Groove", Path = "BreezeGroove.mp3", Enabled = true}, --9
-				{Title = "Top Flow - Power Is You", Path = "PowerIsYou.mp3", Enabled = true}, --10
-				{Title = "Top Flow - Family Trip", Path = "FamilyTrip.mp3", Enabled = true}, --11
-				{Title = "Top Flow - Rise Above", Path = "RiseAbove.mp3", Enabled = true}, --12
-				{Title = "Eugene Myers - Energy Catcher", Path = "EnergyCatcher.mp3", Enabled = true}, --13
-				{Title = "Eugene Myers - Breaking The Point", Path = "BreakingThePoint.mp3", Enabled = true}, --14
-				{Title = "Eugene Myers - Epic Promo", Path = "EpicPromo.mp3", Enabled = true}, --15
+				{Title = "Rage Against The Machine - Guerrilla Radio", Path = "RATMGR.mp3", Enabled = true}, --9
+				{Title = "Matrix Soundtrack - Clubbed to Death", Path = "MatrixCTD.mp3", Enabled = true}, --10
+				{Title = "Weird Al - It's  All About the Pentiums", Path = "WAPentiums.mp3", Enabled = true}, --11
+				{Title = "Technotronic - Pump Up the Jam", Path = "TechnotronicPump.mp3", Enabled = true}, --12
+				{Title = "Twisted Metal OST - Darkness Prevails", Path = "TMDarkness.mp3", Enabled = true}, --13
+				{Title = "Breaking Benjamin - Polyamorous", Path = "BBPoly.mp3", Enabled = true}, --14
+				{Title = "Ellie Goulding - Lights", Path = "EllieLights.mp3", Enabled = true}, --15
 				{Title = "Cascada - Everytime we Touch", Path = "CascadaHero.ogg", Enabled = true}, --16
 				{Title = "RA - NGGYU", Path = "RANGGYU.mp3", Enabled = true}, --17
 				{Title = "Linkin Park - The Emptiness Machine", Path = "LPEmptiness.mp3", Enabled = true}, --18
@@ -42,28 +42,28 @@ BloodlustMusicRemix.DefaultSongTable =
 				{Title = "Mortal Kombat - Main Theme", Path = "MKTheme.mp3", Enabled = true}, --36
 				{Title = "Foo Fighers - Everlong", Path = "FFEverlong.mp3", Enabled = true}, --37
 				{Title = "Repo! - At the Opera", Path = "PistonGoHero.mp3", Enabled = true}, --38
-				{Title = "Vicky Vale - Dancing", Path = "DancingHero.mp3", Enabled = true}, --39
-				{Title = "Fastway - Go Beat Crazy", Path = "BeatCrazyHero.mp3", Enabled = true}, --40
-				{Title = "Go2 - Spitfire", Path = "SpitfireHero.mp3", Enabled = true}, --41
-				{Title = "Fastway - Shock Out", Path = "ShockOutHero.mp3", Enabled = true}, --42
-				{Title = "Speedman - Speed Lover", Path = "SpeedLoverHero.mp3", Enabled = true}, --43
-				{Title = "Jennifer Saunders - Holding Out for a Hero", Path = "ShrekHero.mp3", Enabled = true}, --44
-				{Title = "Dizzee Rascal & Armand van Helden - Bonkers", Path = "BonkersHero.mp3", Enabled = true}, --45
-				{Title = "Fastway - Hyper Super Power", Path = "HyperSuperHero.mp3", Enabled = true}, --46
-				{Title = "Go2 & DJ Boss - Superstar", Path = "SuperstarHero.mp3", Enabled = true}, --47
-				{Title = "Ace - Adrenaline", Path = "AdrenalineHero.mp3", Enabled = true}, --48
-				{Title = "Priscilla - Love is in Danger", Path = "LoveDangerHero.mp3", Enabled = true}, --49
-				{Title = "Sara - Burning Up For You", Path = "BurningUpHero.mp3", Enabled = true}, --50
-				{Title = "Daniel - Frontal Impact", Path = "ImpactHero.mp3", Enabled = true}, --51
-				{Title = "Fastway - Love Countdown", Path = "CountdownHero.mp3", Enabled = true}, --52
-				{Title = "Symbol - Forever Young", Path = "YoungHero.mp3", Enabled = true}, --53
-				{Title = "The Snake - Speed of Light", Path = "SpeedLightHero.mp3", Enabled = true}, --54
-				{Title = "Daniel - Super Driver", Path = "SuperDriverHero.mp3", Enabled = true}, --55
-				{Title = "Carpenter Brut - Roller Mobster", Path = "RollerMobsterHero.mp3", Enabled = true}, --56
-				{Title = "DJ Paul Elstak - Rainbow High In The Sky", Path = "RainbowHighHero.mp3", Enabled = true}, --57
-				{Title = "Nakatomi - Children of the Night", Path = "NightChildrenHero.mp3", Enabled = true}, --58
-				{Title = "Ace - Crazy On Emotion", Path = "CrazyEmotionHero.mp3", Enabled = true}, --59
-				{Title = "2 Fast - Burning Up The Night", Path = "BurningNightHero.mp3", Enabled = true}, --60
+				{Title = "AEW - Kenny Omega (Battlecry)", Path = "AEWKennyOmega.mp3", Enabled = true}, --39
+				{Title = "WWE/AEW - Cody Rhodes (Kingdom)", Path = "CRKingdom.mp3", Enabled = true}, --40
+				{Title = "AEW - FTR ", Path = "AEWFTR.mp3", Enabled = true}, --41
+				{Title = "AEW - Will Ospreay (Elevated)", Path = "AEWWillOspreay.mp3", Enabled = true}, --42
+				{Title = "Unknown - Good Dream?", Path = "GoodDream.mp3", Enabled = true}, --43
+				{Title = "WWE - Seth Rollins (Burn it down)", Path = "WWESeth.mp3", Enabled = true}, --44
+				{Title = "Eminem - Lose Yourself", Path = "EminemLoseYourself.mp3", Enabled = true}, --45
+				{Title = "Disturbed - Indestructible", Path = "DisturbedIndestructible.mp3", Enabled = true}, --46
+				{Title = "Norwegian Recycling - Good Time", Path = "NRGoodTime.mp3", Enabled = true}, --47
+				{Title = "Gareth Emery feat. Christina Novelli - Concrete Angel", Path = "ConcreteAngel.mp3", Enabled = true}, --48
+				{Title = "Tiësto - Red Lights", Path = "RedLights.mp3", Enabled = true}, --49
+				{Title = "Krewella - Alive", Path = "KrewellaAlive.mp3", Enabled = true}, --50
+				{Title = "WWE - Randy Orton (Voices)", Path = "RKO.mp3", Enabled = true}, --51
+				{Title = "Psy - Gangnam Style", Path = "PsyGangnamStyle.mp3", Enabled = true}, --52
+				{Title = "State of Shock - Money Honey", Path = "SoSMoeyHoney.mp3", Enabled = true}, --53
+				{Title = "Alesso - Years feat Matthew Koma", Path = "AlessoYears.mp3", Enabled = true}, --54
+				{Title = "8bit Dr Horrible - On the Rise", Path = "8bitDROTR.mp3", Enabled = true}, --55
+				{Title = "Avicii - Levels", Path = "Levels.mp3", Enabled = true}, --56
+				{Title = "Usher - Yeah", Path = "Yeah.mp3", Enabled = true}, --57
+				{Title = "SilverLetomi - I'm Still Standing", Path = "StillStanding.mp3", Enabled = true}, --58
+				{Title = "The XX - Intro", Path = "Intro.mp3", Enabled = true}, --59
+				{Title = "Dash Berlin - Man on the run", Path = "Run.mp3", Enabled = true}, --60
 }
 
 --the default, empty friendlist
