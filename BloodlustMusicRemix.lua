@@ -14,7 +14,7 @@ BloodlustMusicRemix.DefaultSongTable =
 				{Title = "Guile Theme", Path = "GuileTheme.mp3", Enabled = true}, --8
 				{Title = "Rage Against The Machine - Guerrilla Radio", Path = "RATMGR.mp3", Enabled = true}, --9
 				{Title = "Matrix Soundtrack - Clubbed to Death", Path = "MatrixCTD.mp3", Enabled = true}, --10
-				{Title = "Weird Al - It's  All About the Pentiums", Path = "WAPentiums.mp3", Enabled = true}, --11
+				{Title = "NiNi Music - Homeland", Path = "Nini.mp3", Enabled = true}, --11
 				{Title = "Technotronic - Pump Up the Jam", Path = "TechnotronicPump.mp3", Enabled = true}, --12
 				{Title = "Twisted Metal OST - Darkness Prevails", Path = "TMDarkness.mp3", Enabled = true}, --13
 				{Title = "Breaking Benjamin - Polyamorous", Path = "BBPoly.mp3", Enabled = true}, --14

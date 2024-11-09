@@ -4,6 +4,7 @@
 ## Original Author: Yellowdevil-ArgentDawn
 ## Modified by: Sorean-Dawnbringer
 ## Version: 1.0.0
+## IconTexture: 454048
 ## SavedVariables: BloodlustSoundchannelNumber, BloodlustVolumecache, BloodlustSoundhandle, BloodlustChannelVolume, BloodlustMaxSoundchannelBoolean, BloodlustSoundchannelscache, BloodlustMusicMute, BloodlustSongObjectTable, BloodlustMusicShowPanelAfterReload, BloodlustFavoredFriendTable
 
 BloodlustMusicRemixConfig.lua
