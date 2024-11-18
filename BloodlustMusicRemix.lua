@@ -13,19 +13,19 @@ BloodlustMusicRemix.DefaultSongTable =
 				{Title = "X-men - 97 Theme", Path = "Xmen97.mp3", Enabled = true}, --7
 				{Title = "Guile Theme", Path = "GuileTheme.mp3", Enabled = true}, --8
 				{Title = "Rage Against The Machine - Guerrilla Radio", Path = "RATMGR.mp3", Enabled = true}, --9
-				{Title = "Matrix Soundtrack - Clubbed to Death", Path = "MatrixCTD.mp3", Enabled = true}, --10
+				{Title = "Uniting Nations - You and Me", Path = "UNYnM.mp3", Enabled = true}, --10
 				{Title = "NiNi Music - Homeland", Path = "Nini.mp3", Enabled = true}, --11
 				{Title = "Technotronic - Pump Up the Jam", Path = "TechnotronicPump.mp3", Enabled = true}, --12
-				{Title = "Twisted Metal OST - Darkness Prevails", Path = "TMDarkness.mp3", Enabled = true}, --13
+				{Title = "Underworld - Born Slippy", Path = "BSlippy.mp3", Enabled = true}, --13
 				{Title = "Breaking Benjamin - Polyamorous", Path = "BBPoly.mp3", Enabled = true}, --14
 				{Title = "Ellie Goulding - Lights", Path = "EllieLights.mp3", Enabled = true}, --15
 				{Title = "Cascada - Everytime we Touch", Path = "CascadaHero.ogg", Enabled = true}, --16
-				{Title = "RA - NGGYU", Path = "RANGGYU.mp3", Enabled = true}, --17
+				{Title = "DK64 - DK Rap", Path = "DKRap.mp3", Enabled = true}, --17
 				{Title = "Linkin Park - The Emptiness Machine", Path = "LPEmptiness.mp3", Enabled = true}, --18
 				{Title = "Linkin Park - Heavy is the Crown", Path = "LPHeavy.mp3", Enabled = true}, --19
 				{Title = "Eric Prydz - Call On Me", Path = "CallOnMeHero.ogg", Enabled = true}, --20
 				{Title = "Pokémon - Theme Song", Path = "Pokemon.mp3", Enabled = true}, --21
-				{Title = "Star Wars - Cantina Band", Path = "StarWarsCantina.mp3", Enabled = true}, --22
+				{Title = "Master Blaster - Hypnotic Tango", Path = "MBTango.mp3", Enabled = true}, --22
 				{Title = "Avenge Sevenfold - Almost Easy", Path = "ASAlmostEasy.mp3", Enabled = true}, --23
 				{Title = "A Day To Remember - Mr. Highway's Thinking About The End", Path = "ADTRMrHighway.mp3", Enabled = true}, --24
 				{Title = "Mötley Crüe - Kickstart my Heart", Path = "KickstartHero.ogg", Enabled = true}, --25
@@ -41,7 +41,7 @@ BloodlustMusicRemix.DefaultSongTable =
 				{Title = "Haddaway - What is love?", Path = "Haddaway.mp3", Enabled = true}, --35
 				{Title = "Mortal Kombat - Main Theme", Path = "MKTheme.mp3", Enabled = true}, --36
 				{Title = "Foo Fighers - Everlong", Path = "FFEverlong.mp3", Enabled = true}, --37
-				{Title = "Repo! - At the Opera", Path = "PistonGoHero.mp3", Enabled = true}, --38
+				{Title = "Culture Beat - Mr. Vain", Path = "MBVain.mp3", Enabled = true}, --38
 				{Title = "AEW - Kenny Omega (Battlecry)", Path = "AEWKennyOmega.mp3", Enabled = true}, --39
 				{Title = "WWE/AEW - Cody Rhodes (Kingdom)", Path = "CRKingdom.mp3", Enabled = true}, --40
 				{Title = "AEW - FTR ", Path = "AEWFTR.mp3", Enabled = true}, --41
@@ -58,7 +58,7 @@ BloodlustMusicRemix.DefaultSongTable =
 				{Title = "Psy - Gangnam Style", Path = "PsyGangnamStyle.mp3", Enabled = true}, --52
 				{Title = "State of Shock - Money Honey", Path = "SoSMoeyHoney.mp3", Enabled = true}, --53
 				{Title = "Alesso - Years feat Matthew Koma", Path = "AlessoYears.mp3", Enabled = true}, --54
-				{Title = "8bit Dr Horrible - On the Rise", Path = "8bitDROTR.mp3", Enabled = true}, --55
+				{Title = "Studio B - I See Girls", Path = "Girls .mp3", Enabled = true}, --55
 				{Title = "Avicii - Levels", Path = "Levels.mp3", Enabled = true}, --56
 				{Title = "Usher - Yeah", Path = "Yeah.mp3", Enabled = true}, --57
 				{Title = "SilverLetomi - I'm Still Standing", Path = "StillStanding.mp3", Enabled = true}, --58
@@ -131,7 +131,7 @@ local currentlyPlaying = " "
 local minute = 0
 local songNumber = 0
 local spellIDS = {80353, 32182, 2825, 264667, 146555, 178207, 256740, 230935, 309658, 350249, 368245, 390386, 381301, 386540, 441076}
---342242 not implemented yet
+
 
 C_Timer.After(.1, function() -- wait a bit
 	playerGUID = UnitGUID("player");
@@ -178,6 +178,7 @@ function StopSong(Showtext)
 	if (Showtext) then
 		print(BloodlustMusicRemix.announcerHeader .. "Song Stopped")
 	end
+	playsong = false
 end
 
 --Repeatable function to play a song
@@ -306,8 +307,19 @@ function SongPlayerPrimer(heroSpellID, specificSong, favoredFriend)
 		end
 	end
 end
-
-
+local playsong = false
+function checkforlust(name, icon, _, _, _, _, _, _, _, spellId, ...)
+	-- Could have written a loop, but copy/paste 3 times was just as fast.
+	if (spellId == 390435) then
+		playsong = true
+	end
+	if (spellId == 80354) then
+		playsong = true
+	end
+	if (spellId == 264689) then
+		playsong = true
+	end
+end
 --listens for all Events, and filters out the player obtaining or removing a hero buff
 function f:OnEvent()
 	local _, event, _, sourceGUID, sourceName, _, _, destinationGUID, _, _, _, spellID, spellName, _, _ = CombatLogGetCurrentEventInfo();
@@ -328,7 +340,15 @@ function f:OnEvent()
 						end
 					end
 					--play a song
-				    SongPlayerPrimer(value, 0, favoredFriend);
+					--requested to remove the play for the aug mini lust
+					--This checks for exhaustion/Temporal Displacement/Fury of the aspects/Fatigued debuff and plays if found
+					--Problem, this still triggers if they are in an active Debuff cooldown. Leaving as is, but may come back to it.
+					AuraUtil.ForEachAura("player", "HARMFUL", nil, checkforlust)
+					if (playsong == true) then
+						SongPlayerPrimer(value, 0, favoredFriend);
+						--reset check
+						playsong = false
+					end
 				end
 			end
 		--if a buff was removed from the player then
