@@ -178,7 +178,6 @@ function StopSong(Showtext)
 	if (Showtext) then
 		print(BloodlustMusicRemix.announcerHeader .. "Song Stopped")
 	end
-	playsong = false
 end
 
 --Repeatable function to play a song
@@ -307,19 +306,6 @@ function SongPlayerPrimer(heroSpellID, specificSong, favoredFriend)
 		end
 	end
 end
-local playsong = false
-function checkforlust(name, icon, _, _, _, _, _, _, _, spellId, ...)
-	-- Could have written a loop, but copy/paste 3 times was just as fast.
-	if (spellId == 390435) then
-		playsong = true
-	end
-	if (spellId == 80354) then
-		playsong = true
-	end
-	if (spellId == 264689) then
-		playsong = true
-	end
-end
 --listens for all Events, and filters out the player obtaining or removing a hero buff
 function f:OnEvent()
 	local _, event, _, sourceGUID, sourceName, _, _, destinationGUID, _, _, _, spellID, spellName, _, _ = CombatLogGetCurrentEventInfo();
@@ -340,15 +326,7 @@ function f:OnEvent()
 						end
 					end
 					--play a song
-					--requested to remove the play for the aug mini lust
-					--This checks for exhaustion/Temporal Displacement/Fury of the aspects/Fatigued debuff and plays if found
-					--Problem, this still triggers if they are in an active Debuff cooldown. Leaving as is, but may come back to it.
-					AuraUtil.ForEachAura("player", "HARMFUL", nil, checkforlust)
-					if (playsong == true) then
-						SongPlayerPrimer(value, 0, favoredFriend);
-						--reset check
-						playsong = false
-					end
+					SongPlayerPrimer(value, 0, favoredFriend);
 				end
 			end
 		--if a buff was removed from the player then
