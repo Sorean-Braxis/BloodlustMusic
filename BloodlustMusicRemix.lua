@@ -328,7 +328,6 @@ function f:OnEvent()
 					--play a song
 					SongPlayerPrimer(value, 0, favoredFriend);
 					SongPlayerPrimer(value, 0, favoredFriend);
-					end
 				end
 			end
 		--if a buff was removed from the player then
