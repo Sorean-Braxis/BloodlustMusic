@@ -41,7 +41,7 @@ BloodlustMusicRemix.DefaultSongTable =
 				{Title = "Haddaway - What is love?", Path = "Haddaway.mp3", Enabled = true}, --35
 				{Title = "Mortal Kombat - Main Theme", Path = "MKTheme.mp3", Enabled = true}, --36
 				{Title = "Foo Fighers - Everlong", Path = "FFEverlong.mp3", Enabled = true}, --37
-				{Title = "Culture Beat - Mr. Vain", Path = "MBVain.mp3", Enabled = true}, --38
+				{Title = "Culture Beat - Mr. Vain", Path = "CBVain.mp3", Enabled = true}, --38
 				{Title = "AEW - Kenny Omega (Battlecry)", Path = "AEWKennyOmega.mp3", Enabled = true}, --39
 				{Title = "WWE/AEW - Cody Rhodes (Kingdom)", Path = "CRKingdom.mp3", Enabled = true}, --40
 				{Title = "AEW - FTR ", Path = "AEWFTR.mp3", Enabled = true}, --41
@@ -56,9 +56,9 @@ BloodlustMusicRemix.DefaultSongTable =
 				{Title = "Krewella - Alive", Path = "KrewellaAlive.mp3", Enabled = true}, --50
 				{Title = "WWE - Randy Orton (Voices)", Path = "RKO.mp3", Enabled = true}, --51
 				{Title = "Psy - Gangnam Style", Path = "PsyGangnamStyle.mp3", Enabled = true}, --52
-				{Title = "State of Shock - Money Honey", Path = "SoSMoeyHoney.mp3", Enabled = true}, --53
+				{Title = "State of Shock - Money Honey", Path = "SoSMoneyHoney.mp3", Enabled = true}, --53
 				{Title = "Alesso - Years feat Matthew Koma", Path = "AlessoYears.mp3", Enabled = true}, --54
-				{Title = "Studio B - I See Girls", Path = "Girls .mp3", Enabled = true}, --55
+				{Title = "Studio B - I See Girls", Path = "Girls.mp3", Enabled = true}, --55
 				{Title = "Avicii - Levels", Path = "Levels.mp3", Enabled = true}, --56
 				{Title = "Usher - Yeah", Path = "Yeah.mp3", Enabled = true}, --57
 				{Title = "SilverLetomi - I'm Still Standing", Path = "StillStanding.mp3", Enabled = true}, --58
